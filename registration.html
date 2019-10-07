@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+h1
+{
+text-align:center;
+color: #4CAF50 ; 
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+}
+input[type=text], select {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+    input[type=password], select {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    
+<head>
+  <title>Register Form</title>
+</head>
+<body>
+    <h1>ISTP Registration Form</h1>
+    <div id="registration">
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Username:</td>
+    <td><input type="text" name="istp_username" required></td>
+   </tr>
+       <tr>
+    <td>Password:</td>
+    <td><input type="password" name="istp_password" required></td>
+   </tr>
+       <tr>
+    <td>First Name:</td>
+    <td><input type="text" name="istp_firstname" required></td>
+   </tr>
+             <tr>
+    <td>Middle Name:</td>
+    <td><input type="text" name="istp_middlename" required></td>
+   </tr>
+             <tr>
+    <td>Surname:</td>
+    <td><input type="text" name="istp_surname" required></td>
+   </tr>
+       <tr>
+    <td>Program:</td>
+    <td><select id="istp_program" name="istp_program">
+      <option value="BSIT">BS Information Technology</option>
+      <option value="ACT">ACT</option>
+    </select></td>
+   </tr>
+       <tr>
+    <td>Student ID:</td>
+    <td><input type="text" name="istp_studentiD" required></td>
+   </tr>
+       <tr>
+    <td>Email:</td>
+    <td><input type="text" name="istp_email" required></td>
+   </tr>
+   <tr>
+    <td>Contact No.:</td>
+    <td><input type="text" name="istp_contactno" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="istp_gender" value="m" required>Male
+     <input type="radio" name="istp_gender" value="f" required>Female
+    </td>
+   </tr> 
+    <tr>
+    <td>Secret Question:</td>
+    <td><select id="istp_secretquestion" name="istp_secretquestion">
+      <option value="1">Name of your Best Friend?</option>
+      <option value="2">Where did you grew up?</option>
+    </select></td>
+   </tr>
+      <tr>
+    <td>Secret Question Answer:</td>
+    <td><input type="password" name="istp_SQanswer" required></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+</div>
+</body>
+</html>
