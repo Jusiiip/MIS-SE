@@ -19,6 +19,14 @@ header("location: aindex.php"); // Redirecting To Home Page
     <a class="txt1 bo1 hov1" href="aregistration.html">
 							Add Admin Account						
     </a>
+    
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b id="istp_balance">Balance:  <i><?php echo $istp_balance; ?></i></b>
 </div>
 </body>
 </html>
